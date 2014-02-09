@@ -7,5 +7,5 @@ Quickstart
 
 .. code:: bash
 
-npm install
-node scripts/web-server.js
+  npm install
+  node scripts/web-server.js
