@@ -4,5 +4,8 @@ This is the code for the walkthrough of the official Angular Tutorial from here:
 
 Quickstart
 --------
+
+.. code:: bash
+
 npm install
 node scripts/web-server.js
