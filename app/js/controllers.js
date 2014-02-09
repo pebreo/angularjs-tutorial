@@ -7,9 +7,11 @@
  and goto:
   localhost:8000/apps/index.html
 */
+
+
 var phonecatControllers = angular.module('phonecatControllers', []);
 
-
+// register controller
 phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
     function($scope, $http) {
         $http.get('phones/phones.json').success(function(data) {
@@ -19,6 +21,7 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
 
 }]);
 
+// register controller
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http',
     function($scope, $routeParams, $http) {
         $http.get('phones/' + $routeParams.phoneId + '.json').success(function(data){
